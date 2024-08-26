@@ -1,7 +1,7 @@
 function BookCard(props){
 
     return (
-    <div  className="bg-green-50 max-h-52 max-w-xs w-1/4 m-1 flex flex-col items-center justify-center">
+    <div className={props.highlight ? "bg-green-50 max-h-52 max-w-xs w-1/4 m-1 flex flex-col items-center justify-center" : "bg-green-100 max-h-52 max-w-xs w-1/4 m-1 flex flex-col items-center justify-center"} >
         <div onClick={props.onClick} className="flex justify-center w-full">
             <img className="max-h-24" src={props.img} alt="Bookcover"/>
         </div>

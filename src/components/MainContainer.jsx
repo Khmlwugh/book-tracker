@@ -95,7 +95,8 @@ function MainContainer(){
             />
             <div className="justify-evenly h-3/4 flex flex-wrap">
                 {Books.map( (book) => 
-                <BookCard 
+                <BookCard
+                highlight={ focus == book.id ? false : true}
                 key={book.id} 
                 title={book.title}
                 author={book.author}
