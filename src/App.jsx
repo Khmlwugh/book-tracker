@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import MainContainer from './components/MainContainer'
 import List from './components/List'
 
